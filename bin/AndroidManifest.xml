@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.walletofindia"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/woi_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.walletofindia.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.walletofindia.Chal1Page1"
+            android:label="@string/title_activity_chal1_page1" >
+        </activity>
+        <activity
+            android:name="com.example.walletofindia.Chal1Page2"
+            android:label="@string/title_activity_chal1_page2" >
+        </activity>
+        <activity
+            android:name="com.example.walletofindia.Chal2Page1"
+            android:label="@string/title_activity_chal2_page1" >
+        </activity>
+        <activity
+            android:name="com.example.walletofindia.Chal3Page1"
+            android:label="@string/title_activity_chal3_page1" >
+        </activity>
+        <activity
+            android:name="com.example.walletofindia.Chal1Page3"
+            android:label="@string/title_activity_chal1_page3" >
+        </activity>
+        <activity
+            android:name="com.example.walletofindia.Chal2Page2"
+            android:label="@string/title_activity_chal2_page2" >
+        </activity>
+        <activity
+            android:name="com.example.walletofindia.Chal2Page3"
+            android:label="@string/title_activity_chal2_page3" >
+        </activity>
+        <activity
+            android:name="com.example.walletofindia.Chal3Page2"
+            android:label="@string/title_activity_chal3_page2" >
+        </activity>
+        <activity
+            android:name="com.example.walletofindia.Chal3Page3"
+            android:label="@string/title_activity_chal3_page3" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+       >
+    <!-- Search, should appear as action button
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto"
+    yourapp:showAsAction="ifRoom" -->
+    <item android:id="@+id/navig_drawer"
+          android:icon="@drawable/navig_drawer"
+          android:title="@string/navig_drawer"
+            />
+   </menu>
