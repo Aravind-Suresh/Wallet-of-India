@@ -19,6 +19,7 @@ public class Chal2Page1 extends Activity {
 		    public void run()
 		    {
 		    	Intent intent = new Intent(getApplicationContext(),Chal2Page2.class);
+		    	intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
 		    	startActivity(intent);
 		    	
 		    }
@@ -29,6 +30,7 @@ public class Chal2Page1 extends Activity {
 		 
 	}
 
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.

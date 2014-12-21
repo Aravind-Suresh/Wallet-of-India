@@ -9,6 +9,8 @@ import android.view.Menu;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
+import android.widget.LinearLayout;
+import android.widget.LinearLayout.LayoutParams;
 import android.widget.TextView;
 
 public class Chal1Page2 extends Activity {
@@ -36,6 +38,9 @@ public class Chal1Page2 extends Activity {
 					TextView tv = (TextView) findViewById(arg0.getId());
 					tv.setBackground((GradientDrawable)reso.getDrawable(R.drawable.roundrect_chal1_hover));
 					tv.setPadding(20,10, 20, 10);
+					LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+					params.setMargins(0, 100, 0, 20);
+					tv.setTextSize(20);
 					return true;
 					
 				}
@@ -46,6 +51,7 @@ public class Chal1Page2 extends Activity {
 					tv.setBackground((GradientDrawable)reso.getDrawable(R.drawable.roundrect_chal1));
 					
 					tv.setPadding(20,10, 20, 10);
+					tv.setTextSize(20);
 					
 					Intent intent = new Intent(getApplicationContext(),Chal1Page3.class);
 				    startActivity(intent);
@@ -97,7 +103,7 @@ public class Chal1Page2 extends Activity {
 		case MotionEvent.ACTION_DOWN:
 		{   
 			TextView tv = (TextView) findViewById(arg0.getId());
-			tv.setBackground((GradientDrawable)reso.getDrawable(R.drawable.roundrect_chal1_hover));
+			tv.setBackground((GradientDrawable)reso.getDrawable(R.drawable.roundrect_chal1_prac));
 			tv.setPadding(20,10, 20, 10);
 			return true;
 			

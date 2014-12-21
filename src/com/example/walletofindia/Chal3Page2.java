@@ -97,7 +97,7 @@ public class Chal3Page2 extends Activity {
 		case MotionEvent.ACTION_DOWN:
 		{   
 			TextView tv = (TextView) findViewById(arg0.getId());
-			tv.setBackground((GradientDrawable)reso.getDrawable(R.drawable.roundrect_chal3_hover));
+			tv.setBackground((GradientDrawable)reso.getDrawable(R.drawable.roundrect_chal3_prac));
 			tv.setPadding(20,10, 20, 10);
 			return true;
 			

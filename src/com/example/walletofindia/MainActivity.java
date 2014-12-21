@@ -237,6 +237,7 @@ public class MainActivity extends Activity {
 					iv.setImageAlpha(def_alpha);
 					
 				    Intent intent = new Intent(getApplicationContext(),Chal1Page1.class);
+				    intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
 				    startActivity(intent);
 				    return true;
 				}
@@ -272,6 +273,7 @@ public class MainActivity extends Activity {
 					
 
 				    Intent intent = new Intent(getApplicationContext(),Chal2Page1.class);
+				    intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
 				    startActivity(intent);
 				    
 				    return true;
@@ -306,6 +308,7 @@ public class MainActivity extends Activity {
 					iv.setImageAlpha(def_alpha);
 
 				    Intent intent = new Intent(getApplicationContext(),Chal3Page1.class);
+				    intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
 				    startActivity(intent);
 				    
 				    return true;

@@ -3,10 +3,9 @@ package com.example.walletofindia;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
+import android.os.CountDownTimer;
 import android.view.Menu;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class Chal2Page2 extends Activity {
 
@@ -47,10 +46,20 @@ public class Chal2Page2 extends Activity {
 			}
 			if(c==9)	break;
 		}*/
-		 
-		 Intent intent = new Intent(getApplicationContext(),Chal2Page3.class);
-		 startActivity(intent);
-		 
+		new CountDownTimer(10000, 1000) {
+
+            public void onTick(long millisUntilFinished) {
+            	TextView ti = (TextView) findViewById(R.id.secleft);
+                ti.setText("" + (int) (millisUntilFinished / 1000));
+            }
+
+            public void onFinish() {
+                //text.setText("done!");
+            	Intent intent = new Intent(getApplicationContext(), Chal2Page3.class);
+                startActivity(intent);
+            }
+        }.start();
+
 	}
 
 	@Override
